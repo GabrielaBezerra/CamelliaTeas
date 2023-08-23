@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4334EE1C2A959CD00073F3D8 /* TeaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EDFE2A959CD00073F3D8 /* TeaListView.swift */; };
+		4334EE1D2A959CD10073F3D8 /* AllTeasListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EDFF2A959CD00073F3D8 /* AllTeasListViewModel.swift */; };
+		4334EE1E2A959CD10073F3D8 /* TeaRowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE012A959CD00073F3D8 /* TeaRowHeader.swift */; };
+		4334EE1F2A959CD10073F3D8 /* TeaRowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE022A959CD00073F3D8 /* TeaRowImage.swift */; };
+		4334EE202A959CD10073F3D8 /* TeaRowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE032A959CD00073F3D8 /* TeaRowContent.swift */; };
+		4334EE212A959CD10073F3D8 /* TeaRowInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE042A959CD00073F3D8 /* TeaRowInfo.swift */; };
+		4334EE222A959CD10073F3D8 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE052A959CD00073F3D8 /* Line.swift */; };
+		4334EE232A959CD10073F3D8 /* TeaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE062A959CD00073F3D8 /* TeaRowView.swift */; };
+		4334EE242A959CD10073F3D8 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE082A959CD00073F3D8 /* TimerView.swift */; };
+		4334EE252A959CD10073F3D8 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE092A959CD00073F3D8 /* TimerViewModel.swift */; };
+		4334EE262A959CD10073F3D8 /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE0B2A959CD00073F3D8 /* FoodListViewModel.swift */; };
+		4334EE272A959CD10073F3D8 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE0C2A959CD00073F3D8 /* FoodListView.swift */; };
+		4334EE282A959CD10073F3D8 /* FavoriteTeasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE0E2A959CD00073F3D8 /* FavoriteTeasViewModel.swift */; };
+		4334EE292A959CD10073F3D8 /* FavoriteTeasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE0F2A959CD00073F3D8 /* FavoriteTeasList.swift */; };
+		4334EE2A2A959CD10073F3D8 /* CamelliaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE112A959CD00073F3D8 /* CamelliaView.swift */; };
+		4334EE2B2A959CD10073F3D8 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE122A959CD00073F3D8 /* OptionsView.swift */; };
+		4334EE2C2A959CD10073F3D8 /* SearchTeaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE132A959CD00073F3D8 /* SearchTeaViewModel.swift */; };
+		4334EE2D2A959CD10073F3D8 /* CamelliaTeasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE142A959CD00073F3D8 /* CamelliaTeasApp.swift */; };
+		4334EE2E2A959CD10073F3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4334EE152A959CD00073F3D8 /* Assets.xcassets */; };
+		4334EE2F2A959CD10073F3D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4334EE172A959CD00073F3D8 /* Preview Assets.xcassets */; };
+		4334EE302A959CD10073F3D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE192A959CD00073F3D8 /* Model.swift */; };
+		4334EE312A959CD10073F3D8 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1A2A959CD00073F3D8 /* Tea.swift */; };
+		4334EE322A959CD10073F3D8 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1B2A959CD00073F3D8 /* Food.swift */; };
+		438600172A94DD6000E942C3 /* CamelliaTeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */; };
+		438600212A94DD6000E942C3 /* CamelliaTeasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600202A94DD6000E942C3 /* CamelliaTeasUITests.swift */; };
+		438600232A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600222A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		438600132A94DD6000E942C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4386FFFA2A94DD5F00E942C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438600012A94DD5F00E942C3;
+			remoteInfo = HelloLogs;
+		};
+		4386001D2A94DD6000E942C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4386FFFA2A94DD5F00E942C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438600012A94DD5F00E942C3;
+			remoteInfo = HelloLogs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4334EDFE2A959CD00073F3D8 /* TeaListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaListView.swift; sourceTree = "<group>"; };
+		4334EDFF2A959CD00073F3D8 /* AllTeasListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTeasListViewModel.swift; sourceTree = "<group>"; };
+		4334EE012A959CD00073F3D8 /* TeaRowHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaRowHeader.swift; sourceTree = "<group>"; };
+		4334EE022A959CD00073F3D8 /* TeaRowImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaRowImage.swift; sourceTree = "<group>"; };
+		4334EE032A959CD00073F3D8 /* TeaRowContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaRowContent.swift; sourceTree = "<group>"; };
+		4334EE042A959CD00073F3D8 /* TeaRowInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaRowInfo.swift; sourceTree = "<group>"; };
+		4334EE052A959CD00073F3D8 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		4334EE062A959CD00073F3D8 /* TeaRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaRowView.swift; sourceTree = "<group>"; };
+		4334EE082A959CD00073F3D8 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		4334EE092A959CD00073F3D8 /* TimerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		4334EE0B2A959CD00073F3D8 /* FoodListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
+		4334EE0C2A959CD00073F3D8 /* FoodListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		4334EE0E2A959CD00073F3D8 /* FavoriteTeasViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTeasViewModel.swift; sourceTree = "<group>"; };
+		4334EE0F2A959CD00073F3D8 /* FavoriteTeasList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTeasList.swift; sourceTree = "<group>"; };
+		4334EE112A959CD00073F3D8 /* CamelliaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamelliaView.swift; sourceTree = "<group>"; };
+		4334EE122A959CD00073F3D8 /* OptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		4334EE132A959CD00073F3D8 /* SearchTeaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTeaViewModel.swift; sourceTree = "<group>"; };
+		4334EE142A959CD00073F3D8 /* CamelliaTeasApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamelliaTeasApp.swift; sourceTree = "<group>"; };
+		4334EE152A959CD00073F3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4334EE172A959CD00073F3D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4334EE192A959CD00073F3D8 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4334EE1A2A959CD00073F3D8 /* Tea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
+		4334EE1B2A959CD00073F3D8 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		438600022A94DD5F00E942C3 /* CamelliaTeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamelliaTeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		438600122A94DD6000E942C3 /* CamelliaTeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamelliaTeasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamelliaTeasTests.swift; sourceTree = "<group>"; };
+		4386001C2A94DD6000E942C3 /* CamelliaTeasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamelliaTeasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438600202A94DD6000E942C3 /* CamelliaTeasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamelliaTeasUITests.swift; sourceTree = "<group>"; };
+		438600222A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamelliaTeasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4386000F2A94DD6000E942C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438600192A94DD6000E942C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4386FFFF2A94DD5F00E942C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4334EDFB2A959CD00073F3D8 /* CamelliaTeas */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE142A959CD00073F3D8 /* CamelliaTeasApp.swift */,
+				4334EE182A959CD00073F3D8 /* Model */,
+				4334EDFC2A959CD00073F3D8 /* Scenes */,
+				4334EE152A959CD00073F3D8 /* Assets.xcassets */,
+				4334EE162A959CD00073F3D8 /* Preview Content */,
+			);
+			path = CamelliaTeas;
+			sourceTree = "<group>";
+		};
+		4334EDFC2A959CD00073F3D8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4334EDFD2A959CD00073F3D8 /* TeaList */,
+				4334EE072A959CD00073F3D8 /* Timer */,
+				4334EE0A2A959CD00073F3D8 /* FoodList */,
+				4334EE0D2A959CD00073F3D8 /* FavoriteTeas */,
+				4334EE102A959CD00073F3D8 /* Camellia */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4334EDFD2A959CD00073F3D8 /* TeaList */ = {
+			isa = PBXGroup;
+			children = (
+				4334EDFE2A959CD00073F3D8 /* TeaListView.swift */,
+				4334EDFF2A959CD00073F3D8 /* AllTeasListViewModel.swift */,
+				4334EE002A959CD00073F3D8 /* TeaRow */,
+			);
+			path = TeaList;
+			sourceTree = "<group>";
+		};
+		4334EE002A959CD00073F3D8 /* TeaRow */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE012A959CD00073F3D8 /* TeaRowHeader.swift */,
+				4334EE022A959CD00073F3D8 /* TeaRowImage.swift */,
+				4334EE032A959CD00073F3D8 /* TeaRowContent.swift */,
+				4334EE042A959CD00073F3D8 /* TeaRowInfo.swift */,
+				4334EE052A959CD00073F3D8 /* Line.swift */,
+				4334EE062A959CD00073F3D8 /* TeaRowView.swift */,
+			);
+			path = TeaRow;
+			sourceTree = "<group>";
+		};
+		4334EE072A959CD00073F3D8 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE082A959CD00073F3D8 /* TimerView.swift */,
+				4334EE092A959CD00073F3D8 /* TimerViewModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		4334EE0A2A959CD00073F3D8 /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE0B2A959CD00073F3D8 /* FoodListViewModel.swift */,
+				4334EE0C2A959CD00073F3D8 /* FoodListView.swift */,
+			);
+			path = FoodList;
+			sourceTree = "<group>";
+		};
+		4334EE0D2A959CD00073F3D8 /* FavoriteTeas */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE0E2A959CD00073F3D8 /* FavoriteTeasViewModel.swift */,
+				4334EE0F2A959CD00073F3D8 /* FavoriteTeasList.swift */,
+			);
+			path = FavoriteTeas;
+			sourceTree = "<group>";
+		};
+		4334EE102A959CD00073F3D8 /* Camellia */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE112A959CD00073F3D8 /* CamelliaView.swift */,
+				4334EE122A959CD00073F3D8 /* OptionsView.swift */,
+				4334EE132A959CD00073F3D8 /* SearchTeaViewModel.swift */,
+			);
+			path = Camellia;
+			sourceTree = "<group>";
+		};
+		4334EE162A959CD00073F3D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE172A959CD00073F3D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4334EE182A959CD00073F3D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4334EE192A959CD00073F3D8 /* Model.swift */,
+				4334EE1A2A959CD00073F3D8 /* Tea.swift */,
+				4334EE1B2A959CD00073F3D8 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		438600032A94DD5F00E942C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				438600022A94DD5F00E942C3 /* CamelliaTeas.app */,
+				438600122A94DD6000E942C3 /* CamelliaTeasTests.xctest */,
+				4386001C2A94DD6000E942C3 /* CamelliaTeasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		438600152A94DD6000E942C3 /* CamelliaTeasLogsTests */ = {
+			isa = PBXGroup;
+			children = (
+				438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */,
+			);
+			path = CamelliaTeasLogsTests;
+			sourceTree = "<group>";
+		};
+		4386001F2A94DD6000E942C3 /* CamelliaTeasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				438600202A94DD6000E942C3 /* CamelliaTeasUITests.swift */,
+				438600222A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift */,
+			);
+			path = CamelliaTeasUITests;
+			sourceTree = "<group>";
+		};
+		4386FFF92A94DD5F00E942C3 = {
+			isa = PBXGroup;
+			children = (
+				4334EDFB2A959CD00073F3D8 /* CamelliaTeas */,
+				438600152A94DD6000E942C3 /* CamelliaTeasLogsTests */,
+				4386001F2A94DD6000E942C3 /* CamelliaTeasUITests */,
+				438600032A94DD5F00E942C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		438600012A94DD5F00E942C3 /* CamelliaTeas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438600262A94DD6000E942C3 /* Build configuration list for PBXNativeTarget "CamelliaTeas" */;
+			buildPhases = (
+				4386FFFE2A94DD5F00E942C3 /* Sources */,
+				4386FFFF2A94DD5F00E942C3 /* Frameworks */,
+				438600002A94DD5F00E942C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CamelliaTeas;
+			productName = HelloLogs;
+			productReference = 438600022A94DD5F00E942C3 /* CamelliaTeas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		438600112A94DD6000E942C3 /* CamelliaTeasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438600292A94DD6000E942C3 /* Build configuration list for PBXNativeTarget "CamelliaTeasTests" */;
+			buildPhases = (
+				4386000E2A94DD6000E942C3 /* Sources */,
+				4386000F2A94DD6000E942C3 /* Frameworks */,
+				438600102A94DD6000E942C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438600142A94DD6000E942C3 /* PBXTargetDependency */,
+			);
+			name = CamelliaTeasTests;
+			productName = HelloLogsTests;
+			productReference = 438600122A94DD6000E942C3 /* CamelliaTeasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4386001B2A94DD6000E942C3 /* CamelliaTeasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4386002C2A94DD6000E942C3 /* Build configuration list for PBXNativeTarget "CamelliaTeasUITests" */;
+			buildPhases = (
+				438600182A94DD6000E942C3 /* Sources */,
+				438600192A94DD6000E942C3 /* Frameworks */,
+				4386001A2A94DD6000E942C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4386001E2A94DD6000E942C3 /* PBXTargetDependency */,
+			);
+			name = CamelliaTeasUITests;
+			productName = HelloLogsUITests;
+			productReference = 4386001C2A94DD6000E942C3 /* CamelliaTeasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4386FFFA2A94DD5F00E942C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					438600012A94DD5F00E942C3 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					438600112A94DD6000E942C3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 438600012A94DD5F00E942C3;
+					};
+					4386001B2A94DD6000E942C3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 438600012A94DD5F00E942C3;
+					};
+				};
+			};
+			buildConfigurationList = 4386FFFD2A94DD5F00E942C3 /* Build configuration list for PBXProject "CamelliaTeas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4386FFF92A94DD5F00E942C3;
+			productRefGroup = 438600032A94DD5F00E942C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				438600012A94DD5F00E942C3 /* CamelliaTeas */,
+				438600112A94DD6000E942C3 /* CamelliaTeasTests */,
+				4386001B2A94DD6000E942C3 /* CamelliaTeasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438600002A94DD5F00E942C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4334EE2F2A959CD10073F3D8 /* Preview Assets.xcassets in Resources */,
+				4334EE2E2A959CD10073F3D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438600102A94DD6000E942C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4386001A2A94DD6000E942C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4386000E2A94DD6000E942C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438600172A94DD6000E942C3 /* CamelliaTeasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438600182A94DD6000E942C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438600232A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift in Sources */,
+				438600212A94DD6000E942C3 /* CamelliaTeasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4386FFFE2A94DD5F00E942C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4334EE272A959CD10073F3D8 /* FoodListView.swift in Sources */,
+				4334EE252A959CD10073F3D8 /* TimerViewModel.swift in Sources */,
+				4334EE312A959CD10073F3D8 /* Tea.swift in Sources */,
+				4334EE292A959CD10073F3D8 /* FavoriteTeasList.swift in Sources */,
+				4334EE2B2A959CD10073F3D8 /* OptionsView.swift in Sources */,
+				4334EE242A959CD10073F3D8 /* TimerView.swift in Sources */,
+				4334EE2D2A959CD10073F3D8 /* CamelliaTeasApp.swift in Sources */,
+				4334EE2A2A959CD10073F3D8 /* CamelliaView.swift in Sources */,
+				4334EE232A959CD10073F3D8 /* TeaRowView.swift in Sources */,
+				4334EE282A959CD10073F3D8 /* FavoriteTeasViewModel.swift in Sources */,
+				4334EE1C2A959CD00073F3D8 /* TeaListView.swift in Sources */,
+				4334EE1F2A959CD10073F3D8 /* TeaRowImage.swift in Sources */,
+				4334EE1D2A959CD10073F3D8 /* AllTeasListViewModel.swift in Sources */,
+				4334EE2C2A959CD10073F3D8 /* SearchTeaViewModel.swift in Sources */,
+				4334EE322A959CD10073F3D8 /* Food.swift in Sources */,
+				4334EE1E2A959CD10073F3D8 /* TeaRowHeader.swift in Sources */,
+				4334EE202A959CD10073F3D8 /* TeaRowContent.swift in Sources */,
+				4334EE222A959CD10073F3D8 /* Line.swift in Sources */,
+				4334EE302A959CD10073F3D8 /* Model.swift in Sources */,
+				4334EE212A959CD10073F3D8 /* TeaRowInfo.swift in Sources */,
+				4334EE262A959CD10073F3D8 /* FoodListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		438600142A94DD6000E942C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438600012A94DD5F00E942C3 /* CamelliaTeas */;
+			targetProxy = 438600132A94DD6000E942C3 /* PBXContainerItemProxy */;
+		};
+		4386001E2A94DD6000E942C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438600012A94DD5F00E942C3 /* CamelliaTeas */;
+			targetProxy = 4386001D2A94DD6000E942C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		438600242A94DD6000E942C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		438600252A94DD6000E942C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		438600272A94DD6000E942C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CamelliaTeas/Preview Content\"";
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.CamelliaTeas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		438600282A94DD6000E942C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CamelliaTeas/Preview Content\"";
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.CamelliaTeas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4386002A2A94DD6000E942C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.CamelliaTeasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamelliaTeas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CamelliaTeas";
+			};
+			name = Debug;
+		};
+		4386002B2A94DD6000E942C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.CamelliaTeasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamelliaTeas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CamelliaTeas";
+			};
+			name = Release;
+		};
+		4386002D2A94DD6000E942C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.CamelliaTeasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CamelliaTeas;
+			};
+			name = Debug;
+		};
+		4386002E2A94DD6000E942C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.CamelliaTeasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CamelliaTeas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		438600262A94DD6000E942C3 /* Build configuration list for PBXNativeTarget "CamelliaTeas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438600272A94DD6000E942C3 /* Debug */,
+				438600282A94DD6000E942C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438600292A94DD6000E942C3 /* Build configuration list for PBXNativeTarget "CamelliaTeasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4386002A2A94DD6000E942C3 /* Debug */,
+				4386002B2A94DD6000E942C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4386002C2A94DD6000E942C3 /* Build configuration list for PBXNativeTarget "CamelliaTeasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4386002D2A94DD6000E942C3 /* Debug */,
+				4386002E2A94DD6000E942C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4386FFFD2A94DD5F00E942C3 /* Build configuration list for PBXProject "CamelliaTeas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438600242A94DD6000E942C3 /* Debug */,
+				438600252A94DD6000E942C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4386FFFA2A94DD5F00E942C3 /* Project object */;
+}
