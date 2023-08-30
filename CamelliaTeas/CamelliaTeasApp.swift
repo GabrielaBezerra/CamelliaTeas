@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import UXCam
+import UXCamSwiftUI
 
 @main
 struct CamelliaTeasApp: App {
@@ -13,7 +15,14 @@ struct CamelliaTeasApp: App {
         WindowGroup {
             NavigationStack {
                 CamelliaView()
+                    .uxcamTagScreenName("CamelliaView")
             }
         }
+    }
+    
+    init() {
+        UXCamCore.optIntoSchematicRecordings()
+        let config = UXCamSwiftUI.Configuration(appKey: "biv1s2kbe5d69kp")
+        UXCam.start(with: config)
     }
 }

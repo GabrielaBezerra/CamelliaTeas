@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UXCam
 
 struct TeaRowInfo: View {
     
@@ -26,6 +27,7 @@ struct TeaRowInfo: View {
                 .padding()
                 .overlay { Circle().fill(.red).opacity(0.25) }
                 .onTapGesture {
+                    UXCam.logEvent("Tap on timer on Tea")
                     showTimerSheet = true
                 }
             Text("\(tea.brewTime) minutes")
@@ -33,15 +35,21 @@ struct TeaRowInfo: View {
             Image(systemName: "cup.and.saucer.fill")
                 .padding()
                 .overlay { Circle().fill(.orange).opacity(0.25) }
+                .onTapGesture {
+                    UXCam.logEvent("Tap on description circle on Tea")
+                }
             Text(tea.description)
             
             Image(systemName: "frying.pan.fill")
                 .padding()
                 .overlay { Circle().fill(.brown).opacity(0.25) }
+                .onTapGesture {
+                    UXCam.logEvent("Tap on food circle on Tea")
+                }
             Text(tea.foodComplement)
         }
         .sheet(isPresented: $showTimerSheet) {
-            TimerView(viewModel: .init(minutes: Double(tea.brewTime)))
+            TimerView(teaName: tea.name, viewModel: .init(minutes: Double(tea.brewTime)))
         }
     }
 }

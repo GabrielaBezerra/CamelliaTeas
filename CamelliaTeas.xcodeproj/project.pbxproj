@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432EC8232A9643AC005A307E /* UXCamSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 432EC8222A9643AC005A307E /* UXCamSwiftUI */; };
 		4334EE1C2A959CD00073F3D8 /* TeaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EDFE2A959CD00073F3D8 /* TeaListView.swift */; };
 		4334EE1D2A959CD10073F3D8 /* AllTeasListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EDFF2A959CD00073F3D8 /* AllTeasListViewModel.swift */; };
 		4334EE1E2A959CD10073F3D8 /* TeaRowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE012A959CD00073F3D8 /* TeaRowHeader.swift */; };
@@ -103,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432EC8232A9643AC005A307E /* UXCamSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				4334EDFE2A959CD00073F3D8 /* TeaListView.swift */,
-				4334EDFF2A959CD00073F3D8 /* AllTeasListViewModel.swift */,
 				4334EE002A959CD00073F3D8 /* TeaRow */,
+				4334EDFF2A959CD00073F3D8 /* AllTeasListViewModel.swift */,
 			);
 			path = TeaList;
 			sourceTree = "<group>";
@@ -264,6 +266,9 @@
 			dependencies = (
 			);
 			name = CamelliaTeas;
+			packageProductDependencies = (
+				432EC8222A9643AC005A307E /* UXCamSwiftUI */,
+			);
 			productName = HelloLogs;
 			productReference = 438600022A94DD5F00E942C3 /* CamelliaTeas.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +341,9 @@
 				Base,
 			);
 			mainGroup = 4386FFF92A94DD5F00E942C3;
+			packageReferences = (
+				432EC8212A9643AC005A307E /* XCRemoteSwiftPackageReference "ios-swiftui" */,
+			);
 			productRefGroup = 438600032A94DD5F00E942C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -727,6 +735,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		432EC8212A9643AC005A307E /* XCRemoteSwiftPackageReference "ios-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uxcam/ios-swiftui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		432EC8222A9643AC005A307E /* UXCamSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 432EC8212A9643AC005A307E /* XCRemoteSwiftPackageReference "ios-swiftui" */;
+			productName = UXCamSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4386FFFA2A94DD5F00E942C3 /* Project object */;
 }

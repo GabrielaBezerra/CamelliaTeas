@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UXCam
 
 class FavoriteTeasViewModel: ObservableObject {
 
@@ -32,10 +33,12 @@ class FavoriteTeasViewModel: ObservableObject {
     
     private func unfavorite(_ name: String) {
         __favorites = __favorites.filter { $0 != name }
+        UXCam.logEvent("Unfavorited \(name)", withProperties: Tea.tea(named: name).toDict())
     }
     
     private func favorite(_ name: String) {
         __favorites = __favorites + [name]
+        UXCam.logEvent("Favorited \(name)", withProperties: Tea.tea(named: name).toDict())
     }
 }
 

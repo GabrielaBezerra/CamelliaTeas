@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UXCam
 
 struct FoodListView: View {
     
@@ -23,6 +24,7 @@ struct FoodListView: View {
             .scrollIndicators(.hidden)
         }
         .navigationTitle("Choose your Tea")
+        .uxcamTagScreenName("FoodListView")
     }
 }
 
@@ -49,6 +51,9 @@ struct FoodSectionView: View {
                         }
                         .listStyle(.plain)
                         .navigationBarTitleDisplayMode(.inline)
+                        .onAppear {
+                            UXCam.logEvent("Chose \(tea.name) by Food \(food.description)")
+                        }
                 ) {
                     Text(tea.foodComplement)
                 }

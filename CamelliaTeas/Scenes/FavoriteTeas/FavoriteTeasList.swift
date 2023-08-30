@@ -14,5 +14,6 @@ struct FavoriteTeasList: View {
             TeaListView(viewModel: FavoriteTeasViewModel(), proxy: proxy)
                 .navigationTitle("Favorite Teas")
         }
+        .uxcamTagScreenName("FavoriteTeasView")
     }
 }

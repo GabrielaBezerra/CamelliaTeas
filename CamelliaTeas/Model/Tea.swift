@@ -16,7 +16,26 @@ struct Tea: Model {
     let foodComplement: String
 }
 
+extension Tea: Encodable {
+    enum CodingKeys: CodingKey {
+        case name
+        case brewTime
+        case foodComplement
+    }
+    
+    func toDict() -> [String: Any] {
+        let data = try! JSONEncoder().encode(self)
+        let dict = try! JSONSerialization.jsonObject(with: data) as! [String: Any]
+        return dict
+    }
+}
+
 extension Tea {
+    
+    static func tea(named name: String) -> Tea {
+        Tea.all.first { $0.name == name }!
+    }
+    
     static let all = [
         Tea(
             name: "Black Tea",

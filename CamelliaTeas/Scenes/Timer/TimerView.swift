@@ -7,12 +7,20 @@
 
 import Foundation
 import SwiftUI
+import UXCam
 
 struct TimerView: View {
 
+    let teaName: String
+    
     @State var progress: Double = -1
     @State var pickerValue: Int = 0
-    @ObservedObject var viewModel = TimerViewModel()
+    @ObservedObject var viewModel: TimerViewModel
+    
+    init(teaName: String = "no tea", viewModel: TimerViewModel = TimerViewModel()) {
+        self.teaName = teaName
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         if viewModel.durationInMinutes > 0 {
@@ -68,6 +76,10 @@ struct TimerView: View {
                         
                         Spacer()
                         Button {
+                            UXCam.logEvent("Cancelled Timer", withProperties: [
+                                "tea": teaName,
+                                "timer": viewModel.timerString
+                            ])
                             viewModel.toggleTimer()
                             withAnimation {
                                 progress = 1
@@ -91,13 +103,27 @@ struct TimerView: View {
             }
             .onAppear {
                 withAnimation {
+                    if teaName == "no tea" {
+                        UXCam.logEvent("Starting custom timer with \(viewModel.timerString)")
+                    } else {
+                        UXCam.logEvent("Starting timer for \(teaName)")
+                    }
                     progress = 1
                     UIApplication.shared.isIdleTimerDisabled = true
                 }
             }
             .onDisappear {
+                if viewModel.timerHasFinished {
+                    UXCam.logEvent("Leaving Timer View. Finished brewing \(teaName)")
+                } else {
+                    UXCam.logEvent("Leaving Timer View. Didn't finished brewing", withProperties: [
+                        "tea": teaName,
+                        "timer": viewModel.timerString
+                    ])
+                }
                 UIApplication.shared.isIdleTimerDisabled = false
             }
+            .uxcamTagScreenName("TimerView")
         } else {
             VStack {
                 Text("How long is your timer?")
@@ -124,13 +150,14 @@ struct TimerView: View {
                     .cornerRadius(.infinity)
                 }
             }
+            .uxcamTagScreenName("SetupTimerView")
         }
     }
 }
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(teaName: Tea.all.first!.name)
     }
 }
 
