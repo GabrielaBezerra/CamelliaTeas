@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Mixpanel
 
 struct FavoriteTeasList: View {
     var body: some View {
@@ -15,5 +16,8 @@ struct FavoriteTeasList: View {
                 .navigationTitle("Favorite Teas")
         }
         .uxcamTagScreenName("FavoriteTeasView")
+        .onAppear {
+            Mixpanel.mainInstance().track(event: "FavoriteTeasView")
+        }
     }
 }

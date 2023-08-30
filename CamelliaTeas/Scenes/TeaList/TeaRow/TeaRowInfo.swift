@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import UXCam
+import Mixpanel
 
 struct TeaRowInfo: View {
     
@@ -28,6 +29,7 @@ struct TeaRowInfo: View {
                 .overlay { Circle().fill(.red).opacity(0.25) }
                 .onTapGesture {
                     UXCam.logEvent("Tap on timer on Tea")
+                    Mixpanel.mainInstance().track(event: "Tap on timer on Tea")
                     showTimerSheet = true
                 }
             Text("\(tea.brewTime) minutes")
@@ -37,6 +39,7 @@ struct TeaRowInfo: View {
                 .overlay { Circle().fill(.orange).opacity(0.25) }
                 .onTapGesture {
                     UXCam.logEvent("Tap on description circle on Tea")
+                    Mixpanel.mainInstance().track(event: "Tap on description circle on Tea")
                 }
             Text(tea.description)
             
@@ -45,6 +48,7 @@ struct TeaRowInfo: View {
                 .overlay { Circle().fill(.brown).opacity(0.25) }
                 .onTapGesture {
                     UXCam.logEvent("Tap on food circle on Tea")
+                    Mixpanel.mainInstance().track(event: "Tap on food circle on Tea")
                 }
             Text(tea.foodComplement)
         }

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import UXCam
+import Mixpanel
 
 struct FoodListView: View {
     
@@ -25,6 +26,9 @@ struct FoodListView: View {
         }
         .navigationTitle("Choose your Tea")
         .uxcamTagScreenName("FoodListView")
+        .onAppear {
+            Mixpanel.mainInstance().track(event: "FoodListView")
+        }
     }
 }
 
@@ -53,6 +57,7 @@ struct FoodSectionView: View {
                         .navigationBarTitleDisplayMode(.inline)
                         .onAppear {
                             UXCam.logEvent("Chose \(tea.name) by Food \(food.description)")
+                            Mixpanel.mainInstance().track(event: "Chose \(tea.name) by Food \(food.description)")
                         }
                 ) {
                     Text(tea.foodComplement)

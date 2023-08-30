@@ -34,6 +34,7 @@
 		438600172A94DD6000E942C3 /* CamelliaTeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */; };
 		438600212A94DD6000E942C3 /* CamelliaTeasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600202A94DD6000E942C3 /* CamelliaTeasUITests.swift */; };
 		438600232A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600222A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift */; };
+		43C4F08C2A9F7792000DB0BA /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 43C4F08B2A9F7792000DB0BA /* Mixpanel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				432EC8232A9643AC005A307E /* UXCamSwiftUI in Frameworks */,
+				43C4F08C2A9F7792000DB0BA /* Mixpanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +270,7 @@
 			name = CamelliaTeas;
 			packageProductDependencies = (
 				432EC8222A9643AC005A307E /* UXCamSwiftUI */,
+				43C4F08B2A9F7792000DB0BA /* Mixpanel */,
 			);
 			productName = HelloLogs;
 			productReference = 438600022A94DD5F00E942C3 /* CamelliaTeas.app */;
@@ -343,6 +346,7 @@
 			mainGroup = 4386FFF92A94DD5F00E942C3;
 			packageReferences = (
 				432EC8212A9643AC005A307E /* XCRemoteSwiftPackageReference "ios-swiftui" */,
+				43C4F08A2A9F7792000DB0BA /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
 			);
 			productRefGroup = 438600032A94DD5F00E942C3 /* Products */;
 			projectDirPath = "";
@@ -745,6 +749,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		43C4F08A2A9F7792000DB0BA /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -752,6 +764,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 432EC8212A9643AC005A307E /* XCRemoteSwiftPackageReference "ios-swiftui" */;
 			productName = UXCamSwiftUI;
+		};
+		43C4F08B2A9F7792000DB0BA /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43C4F08A2A9F7792000DB0BA /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

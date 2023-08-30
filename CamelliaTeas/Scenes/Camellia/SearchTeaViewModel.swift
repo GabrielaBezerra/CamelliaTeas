@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 import UXCam
+import Mixpanel
 
 class SearchTeaViewModel: ObservableObject, TeaListViewModelLogic {
     
@@ -25,6 +26,7 @@ class SearchTeaViewModel: ObservableObject, TeaListViewModelLogic {
             .sink(receiveValue: { text in
                 if !text.isEmpty {
                     UXCam.logEvent("Searching for \(text)")
+                    Mixpanel.mainInstance().track(event: "Searching for \(text)")
                 }
             })
             .store(in: &subscription)

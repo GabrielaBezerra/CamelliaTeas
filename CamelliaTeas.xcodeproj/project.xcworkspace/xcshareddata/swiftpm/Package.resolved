@@ -5,7 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/uxcam/ios-sdk",
       "state" : {
-        "revision" : "6fb80dcbe9de520f03c17bd1ec173819e6c49d8e",
+        "revision" : "8edeefba7b041732d6fcd1ac610c4b5c48766065",
         "version" : "3.6.5"
       }
     },
@@ -16,6 +16,15 @@
       "state" : {
         "revision" : "f59cdb8cd6763abd185e503a7f56b4e32fa028b4",
         "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "mixpanel-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mixpanel/mixpanel-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1ce27d937009d5ecce74dad97d69898ffea49c75"
       }
     }
   ],

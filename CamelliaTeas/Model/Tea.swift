@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Mixpanel
 
 struct Tea: Model {
     let id = UUID()
@@ -23,9 +24,9 @@ extension Tea: Encodable {
         case foodComplement
     }
     
-    func toDict() -> [String: Any] {
+    func toDict<T: Any>() -> [String: T] {
         let data = try! JSONEncoder().encode(self)
-        let dict = try! JSONSerialization.jsonObject(with: data) as! [String: Any]
+        let dict = try! JSONSerialization.jsonObject(with: data) as! [String: T]
         return dict
     }
 }

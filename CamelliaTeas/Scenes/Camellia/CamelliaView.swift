@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 import UXCam
+import Mixpanel
 
 struct CamelliaView: View {
 
