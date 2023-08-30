@@ -1,0 +1,50 @@
+{
+  "pins" : [
+    {
+      "identity" : "amplitude-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/amplitude/Amplitude-iOS",
+      "state" : {
+        "branch" : "main",
+        "revision" : "94160a550835e6f0a1df9fa76ab3902ac4648a9c"
+      }
+    },
+    {
+      "identity" : "analytics-connector-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/amplitude/analytics-connector-ios.git",
+      "state" : {
+        "revision" : "d2f3ec4b022211a67d5d4509135d84359f7f8b8d",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uxcam/ios-sdk",
+      "state" : {
+        "revision" : "8edeefba7b041732d6fcd1ac610c4b5c48766065",
+        "version" : "3.6.5"
+      }
+    },
+    {
+      "identity" : "ios-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uxcam/ios-swiftui.git",
+      "state" : {
+        "revision" : "f59cdb8cd6763abd185e503a7f56b4e32fa028b4",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "mixpanel-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mixpanel/mixpanel-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1ce27d937009d5ecce74dad97d69898ffea49c75"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -14,6 +14,12 @@ class TimerViewModel: ObservableObject {
     @Published var timerString: String = "Start timer"
     @Published var timerIsRunning: Bool = false
     
+    var timerHasFinished: Bool {
+        timerString == teaIsReadyMessage
+    }
+    
+    private let teaIsReadyMessage = "Tea is ready 🫖"
+    
     private var endTime: Date?
     private var timer: Timer?
     
@@ -46,7 +52,7 @@ class TimerViewModel: ObservableObject {
                 timerString = formatter.string(from: remainingSeconds)!
             } else {
                 stop()
-                timerString = "Tea is ready 🫖"
+                timerString = teaIsReadyMessage
             }
         }
         timer?.fire()

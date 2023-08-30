@@ -7,6 +7,9 @@
 
 import Foundation
 import SwiftUI
+import UXCam
+import Mixpanel
+import Amplitude
 
 struct OptionsView: View {
     
@@ -31,6 +34,9 @@ struct OptionsView: View {
             .background(Color("redCamellia"))
             .cornerRadius(.infinity)
             .onTapGesture {
+                UXCam.logEvent("Tap on custom timer quick action")
+                Mixpanel.mainInstance().track(event: "Tap on custom timer quick action")
+                Amplitude.instance().logEvent("Tap on custom timer quick action")
                 option = .timer
                 showNextView = false
                 presentSheet = true
@@ -45,6 +51,9 @@ struct OptionsView: View {
             .background(Color("yellowCamellia"))
             .cornerRadius(.infinity)
             .onTapGesture {
+                UXCam.logEvent("Tap on favorites quick action")
+                Mixpanel.mainInstance().track(event: "Tap on favorites quick action")
+                Amplitude.instance().logEvent("Tap on favorites quick action")
                 option = .favorites
                 presentSheet = false
                 showNextView = true
@@ -59,6 +68,9 @@ struct OptionsView: View {
             .background(Color("brownCamellia"))
             .cornerRadius(.infinity)
             .onTapGesture {
+                UXCam.logEvent("Tap on food quick action")
+                Mixpanel.mainInstance().track(event: "Tap on food quick action")
+                Amplitude.instance().logEvent("Tap on food quick action")
                 option = .food
                 presentSheet = false
                 showNextView = true
