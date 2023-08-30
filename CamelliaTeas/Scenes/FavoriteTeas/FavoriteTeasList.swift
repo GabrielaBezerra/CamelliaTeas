@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import Mixpanel
+import Amplitude
 
 struct FavoriteTeasList: View {
     var body: some View {
@@ -18,6 +19,7 @@ struct FavoriteTeasList: View {
         .uxcamTagScreenName("FavoriteTeasView")
         .onAppear {
             Mixpanel.mainInstance().track(event: "FavoriteTeasView")
+            Amplitude.instance().logEvent("FavoriteTeasView")
         }
     }
 }

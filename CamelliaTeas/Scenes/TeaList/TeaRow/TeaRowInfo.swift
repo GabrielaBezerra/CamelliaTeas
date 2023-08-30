@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import UXCam
 import Mixpanel
+import Amplitude
 
 struct TeaRowInfo: View {
     
@@ -30,6 +31,7 @@ struct TeaRowInfo: View {
                 .onTapGesture {
                     UXCam.logEvent("Tap on timer on Tea")
                     Mixpanel.mainInstance().track(event: "Tap on timer on Tea")
+                    Amplitude.instance().logEvent("Tap on timer on Tea")
                     showTimerSheet = true
                 }
             Text("\(tea.brewTime) minutes")
@@ -40,6 +42,7 @@ struct TeaRowInfo: View {
                 .onTapGesture {
                     UXCam.logEvent("Tap on description circle on Tea")
                     Mixpanel.mainInstance().track(event: "Tap on description circle on Tea")
+                    Amplitude.instance().logEvent("Tap on description circle on Tea")
                 }
             Text(tea.description)
             
@@ -49,6 +52,7 @@ struct TeaRowInfo: View {
                 .onTapGesture {
                     UXCam.logEvent("Tap on food circle on Tea")
                     Mixpanel.mainInstance().track(event: "Tap on food circle on Tea")
+                    Amplitude.instance().logEvent("Tap on food circle on Tea")
                 }
             Text(tea.foodComplement)
         }

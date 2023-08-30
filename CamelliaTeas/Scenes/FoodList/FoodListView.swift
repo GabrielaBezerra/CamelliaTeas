@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import UXCam
 import Mixpanel
+import Amplitude
 
 struct FoodListView: View {
     
@@ -28,6 +29,7 @@ struct FoodListView: View {
         .uxcamTagScreenName("FoodListView")
         .onAppear {
             Mixpanel.mainInstance().track(event: "FoodListView")
+            Amplitude.instance().logEvent("FoodListView")
         }
     }
 }
@@ -58,6 +60,7 @@ struct FoodSectionView: View {
                         .onAppear {
                             UXCam.logEvent("Chose \(tea.name) by Food \(food.description)")
                             Mixpanel.mainInstance().track(event: "Chose \(tea.name) by Food \(food.description)")
+                            Amplitude.instance().logEvent("Chose \(tea.name) by Food \(food.description)")
                         }
                 ) {
                     Text(tea.foodComplement)

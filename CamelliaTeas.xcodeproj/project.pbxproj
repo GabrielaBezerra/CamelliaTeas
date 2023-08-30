@@ -31,6 +31,7 @@
 		4334EE302A959CD10073F3D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE192A959CD00073F3D8 /* Model.swift */; };
 		4334EE312A959CD10073F3D8 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1A2A959CD00073F3D8 /* Tea.swift */; };
 		4334EE322A959CD10073F3D8 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1B2A959CD00073F3D8 /* Food.swift */; };
+		4377999A2A9FB380007697AC /* Amplitude in Frameworks */ = {isa = PBXBuildFile; productRef = 437799992A9FB380007697AC /* Amplitude */; };
 		438600172A94DD6000E942C3 /* CamelliaTeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */; };
 		438600212A94DD6000E942C3 /* CamelliaTeasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600202A94DD6000E942C3 /* CamelliaTeasUITests.swift */; };
 		438600232A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600222A94DD6000E942C3 /* CamelliaTeasUITestsLaunchTests.swift */; };
@@ -105,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4377999A2A9FB380007697AC /* Amplitude in Frameworks */,
 				432EC8232A9643AC005A307E /* UXCamSwiftUI in Frameworks */,
 				43C4F08C2A9F7792000DB0BA /* Mixpanel in Frameworks */,
 			);
@@ -271,6 +273,7 @@
 			packageProductDependencies = (
 				432EC8222A9643AC005A307E /* UXCamSwiftUI */,
 				43C4F08B2A9F7792000DB0BA /* Mixpanel */,
+				437799992A9FB380007697AC /* Amplitude */,
 			);
 			productName = HelloLogs;
 			productReference = 438600022A94DD5F00E942C3 /* CamelliaTeas.app */;
@@ -347,6 +350,7 @@
 			packageReferences = (
 				432EC8212A9643AC005A307E /* XCRemoteSwiftPackageReference "ios-swiftui" */,
 				43C4F08A2A9F7792000DB0BA /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+				437799982A9FB380007697AC /* XCRemoteSwiftPackageReference "Amplitude-iOS" */,
 			);
 			productRefGroup = 438600032A94DD5F00E942C3 /* Products */;
 			projectDirPath = "";
@@ -749,6 +753,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		437799982A9FB380007697AC /* XCRemoteSwiftPackageReference "Amplitude-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amplitude/Amplitude-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		43C4F08A2A9F7792000DB0BA /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
@@ -764,6 +776,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 432EC8212A9643AC005A307E /* XCRemoteSwiftPackageReference "ios-swiftui" */;
 			productName = UXCamSwiftUI;
+		};
+		437799992A9FB380007697AC /* Amplitude */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 437799982A9FB380007697AC /* XCRemoteSwiftPackageReference "Amplitude-iOS" */;
+			productName = Amplitude;
 		};
 		43C4F08B2A9F7792000DB0BA /* Mixpanel */ = {
 			isa = XCSwiftPackageProductDependency;

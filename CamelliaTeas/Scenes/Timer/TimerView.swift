@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import UXCam
 import Mixpanel
+import Amplitude
 
 struct TimerView: View {
 
@@ -77,14 +78,13 @@ struct TimerView: View {
                         
                         Spacer()
                         Button {
-                            UXCam.logEvent("Cancelled Timer", withProperties: [
+                            let dict = [
                                 "tea": teaName,
                                 "timer": viewModel.timerString
-                            ])
-                            Mixpanel.mainInstance().track(event: "Cancelled Timer", properties: [
-                                "tea": teaName,
-                                "timer": viewModel.timerString
-                            ])
+                            ]
+                            UXCam.logEvent("Cancelled Timer", withProperties: dict)
+                            Mixpanel.mainInstance().track(event: "Cancelled Timer", properties: dict)
+                            Amplitude.instance().logEvent("Cancelled Timer", withEventProperties: dict)
                             viewModel.toggleTimer()
                             withAnimation {
                                 progress = 1
@@ -111,9 +111,11 @@ struct TimerView: View {
                     if teaName == "no tea" {
                         UXCam.logEvent("Starting custom timer with \(viewModel.timerString)")
                         Mixpanel.mainInstance().track(event: "Starting custom timer with \(viewModel.timerString)")
+                        Amplitude.instance().logEvent("Starting custom timer with \(viewModel.timerString)")
                     } else {
                         UXCam.logEvent("Starting timer for \(teaName)")
                         Mixpanel.mainInstance().track(event: "Starting timer for \(teaName)")
+                        Amplitude.instance().logEvent("Starting timer for \(teaName)")
                     }
                     progress = 1
                     UIApplication.shared.isIdleTimerDisabled = true
@@ -123,21 +125,22 @@ struct TimerView: View {
                 if viewModel.timerHasFinished {
                     UXCam.logEvent("Leaving Timer View. Finished brewing \(teaName)")
                     Mixpanel.mainInstance().track(event: "Leaving Timer View. Finished brewing \(teaName)")
+                    Amplitude.instance().logEvent("Leaving Timer View. Finished brewing \(teaName)")
                 } else {
-                    UXCam.logEvent("Leaving Timer View. Didn't finished brewing", withProperties: [
+                    let dict = [
                         "tea": teaName,
                         "timer": viewModel.timerString
-                    ])
-                    Mixpanel.mainInstance().track(event: "Leaving Timer View. Didn't finished brewing", properties: [
-                        "tea": teaName,
-                        "timer": viewModel.timerString
-                    ])
+                    ]
+                    UXCam.logEvent("Leaving Timer View. Didn't finished brewing", withProperties: dict)
+                    Mixpanel.mainInstance().track(event: "Leaving Timer View. Didn't finished brewing", properties: dict)
+                    Amplitude.instance().logEvent("Leaving Timer View. Didn't finished brewing", withEventProperties: dict)
                 }
                 UIApplication.shared.isIdleTimerDisabled = false
             }
             .uxcamTagScreenName("TimerView")
             .onAppear {
                 Mixpanel.mainInstance().track(event: "TimerView")
+                Amplitude.instance().logEvent("TimerView")
             }
         } else {
             VStack {
@@ -168,6 +171,7 @@ struct TimerView: View {
             .uxcamTagScreenName("SetupTimerView")
             .onAppear {
                 Mixpanel.mainInstance().track(event: "SetupTimerView")
+                Amplitude.instance().logEvent("SetupTimerView")
             }
         }
     }
