@@ -31,6 +31,7 @@
 		4334EE302A959CD10073F3D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE192A959CD00073F3D8 /* Model.swift */; };
 		4334EE312A959CD10073F3D8 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1A2A959CD00073F3D8 /* Tea.swift */; };
 		4334EE322A959CD10073F3D8 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1B2A959CD00073F3D8 /* Food.swift */; };
+		434BF06B2AA0B932009E93C2 /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BF06A2AA0B932009E93C2 /* PremiumView.swift */; };
 		4377999A2A9FB380007697AC /* Amplitude in Frameworks */ = {isa = PBXBuildFile; productRef = 437799992A9FB380007697AC /* Amplitude */; };
 		438600172A94DD6000E942C3 /* CamelliaTeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */; };
 		438600212A94DD6000E942C3 /* CamelliaTeasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600202A94DD6000E942C3 /* CamelliaTeasUITests.swift */; };
@@ -79,6 +80,7 @@
 		4334EE192A959CD00073F3D8 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4334EE1A2A959CD00073F3D8 /* Tea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 		4334EE1B2A959CD00073F3D8 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		434BF06A2AA0B932009E93C2 /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
 		438600022A94DD5F00E942C3 /* CamelliaTeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamelliaTeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438600122A94DD6000E942C3 /* CamelliaTeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamelliaTeasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamelliaTeasTests.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		4334EDFC2A959CD00073F3D8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				434BF0692AA0B923009E93C2 /* Premium */,
 				4334EDFD2A959CD00073F3D8 /* TeaList */,
 				4334EE072A959CD00073F3D8 /* Timer */,
 				4334EE0A2A959CD00073F3D8 /* FoodList */,
@@ -215,6 +218,14 @@
 				4334EE1B2A959CD00073F3D8 /* Food.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		434BF0692AA0B923009E93C2 /* Premium */ = {
+			isa = PBXGroup;
+			children = (
+				434BF06A2AA0B932009E93C2 /* PremiumView.swift */,
+			);
+			path = Premium;
 			sourceTree = "<group>";
 		};
 		438600032A94DD5F00E942C3 /* Products */ = {
@@ -423,6 +434,7 @@
 				4334EE282A959CD10073F3D8 /* FavoriteTeasViewModel.swift in Sources */,
 				4334EE1C2A959CD00073F3D8 /* TeaListView.swift in Sources */,
 				4334EE1F2A959CD10073F3D8 /* TeaRowImage.swift in Sources */,
+				434BF06B2AA0B932009E93C2 /* PremiumView.swift in Sources */,
 				4334EE1D2A959CD10073F3D8 /* AllTeasListViewModel.swift in Sources */,
 				4334EE2C2A959CD10073F3D8 /* SearchTeaViewModel.swift in Sources */,
 				4334EE322A959CD10073F3D8 /* Food.swift in Sources */,
@@ -571,7 +583,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"CamelliaTeas/Preview Content\"";
 				DEVELOPMENT_TEAM = 526YR6WHWC;
 				ENABLE_PREVIEWS = YES;
@@ -602,7 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"CamelliaTeas/Preview Content\"";
 				DEVELOPMENT_TEAM = 526YR6WHWC;
 				ENABLE_PREVIEWS = YES;
