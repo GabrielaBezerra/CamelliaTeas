@@ -26,6 +26,7 @@ struct TeaRowHeader: View {
             } label: {
                 Image(systemName: viewModel.favorites.contains(teaName) ? "heart.fill" : "heart")
                     .font(.system(size: 24))
+                    .foregroundColor(Color("AccentColor"))
             }
         }
         .font(.system(.headline, weight: .medium))
