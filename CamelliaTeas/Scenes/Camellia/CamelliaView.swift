@@ -14,7 +14,6 @@ import Amplitude
 
 struct CamelliaView: View {
 
-    @State var showPremiumView: Bool = false
     @StateObject var viewModel = SearchTeaViewModel()
     
     var body: some View {
@@ -26,22 +25,7 @@ struct CamelliaView: View {
                     }
                     .listRowSeparator(.hidden)
                     
-                    Section(header: HStack {
-                        Text("All teas").bold()
-                        Spacer()
-                        Button {
-                            showPremiumView = true
-                        } label: {
-                            Text("+teas")
-                                .padding(.vertical, 6)
-                                .padding(.horizontal)
-                                .font(.system(size: 14))
-                                .foregroundColor(Color("yellowCamellia"))
-                                .background(Color(uiColor: .label))
-                                .cornerRadius(.infinity)
-                                .bold()
-                        }
-                    }) {
+                    Section(header: TeaListHeaderView()) {
                         TeaListView(proxy: proxy)
                     }
                     .listRowSeparator(.hidden)
@@ -60,14 +44,6 @@ struct CamelliaView: View {
             }
         }
         .navigationTitle("Camellia Sinensis")
-        .sheet(isPresented: $showPremiumView) {
-            PremiumView()
-                .uxcamTagScreenName("PremiumView")
-                .onAppear {
-                    Mixpanel.mainInstance().track(event: "PremiumView")
-                    Amplitude.instance().logEvent("PremiumView")
-                }
-        }
     }
 }
 

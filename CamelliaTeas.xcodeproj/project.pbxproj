@@ -32,6 +32,13 @@
 		4334EE312A959CD10073F3D8 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1A2A959CD00073F3D8 /* Tea.swift */; };
 		4334EE322A959CD10073F3D8 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334EE1B2A959CD00073F3D8 /* Food.swift */; };
 		434BF06B2AA0B932009E93C2 /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BF06A2AA0B932009E93C2 /* PremiumView.swift */; };
+		434BF06D2AA1231F009E93C2 /* TeaListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BF06C2AA1231F009E93C2 /* TeaListHeaderView.swift */; };
+		435CC3DF2AA20D3600BD0242 /* MugsHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CC3DE2AA20D3600BD0242 /* MugsHStackView.swift */; };
+		435CC3E12AA20D6900BD0242 /* MugsVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CC3E02AA20D6900BD0242 /* MugsVStackView.swift */; };
+		435CC3E32AA20DE400BD0242 /* SubscriptionOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CC3E22AA20DE400BD0242 /* SubscriptionOptionsView.swift */; };
+		435CC3E82AA2161700BD0242 /* PremiumFeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CC3E72AA2161700BD0242 /* PremiumFeaturesView.swift */; };
+		435CC3EA2AA2200800BD0242 /* PremiumUnderConstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CC3E92AA2200800BD0242 /* PremiumUnderConstructionView.swift */; };
+		435CC3EC2AA2251700BD0242 /* PremiumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CC3EB2AA2251700BD0242 /* PremiumViewModel.swift */; };
 		4377999A2A9FB380007697AC /* Amplitude in Frameworks */ = {isa = PBXBuildFile; productRef = 437799992A9FB380007697AC /* Amplitude */; };
 		438600172A94DD6000E942C3 /* CamelliaTeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */; };
 		438600212A94DD6000E942C3 /* CamelliaTeasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438600202A94DD6000E942C3 /* CamelliaTeasUITests.swift */; };
@@ -81,6 +88,13 @@
 		4334EE1A2A959CD00073F3D8 /* Tea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 		4334EE1B2A959CD00073F3D8 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		434BF06A2AA0B932009E93C2 /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
+		434BF06C2AA1231F009E93C2 /* TeaListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaListHeaderView.swift; sourceTree = "<group>"; };
+		435CC3DE2AA20D3600BD0242 /* MugsHStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MugsHStackView.swift; sourceTree = "<group>"; };
+		435CC3E02AA20D6900BD0242 /* MugsVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MugsVStackView.swift; sourceTree = "<group>"; };
+		435CC3E22AA20DE400BD0242 /* SubscriptionOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOptionsView.swift; sourceTree = "<group>"; };
+		435CC3E72AA2161700BD0242 /* PremiumFeaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumFeaturesView.swift; sourceTree = "<group>"; };
+		435CC3E92AA2200800BD0242 /* PremiumUnderConstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumUnderConstructionView.swift; sourceTree = "<group>"; };
+		435CC3EB2AA2251700BD0242 /* PremiumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewModel.swift; sourceTree = "<group>"; };
 		438600022A94DD5F00E942C3 /* CamelliaTeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamelliaTeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438600122A94DD6000E942C3 /* CamelliaTeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamelliaTeasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438600162A94DD6000E942C3 /* CamelliaTeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamelliaTeasTests.swift; sourceTree = "<group>"; };
@@ -177,8 +191,8 @@
 		4334EE0A2A959CD00073F3D8 /* FoodList */ = {
 			isa = PBXGroup;
 			children = (
-				4334EE0B2A959CD00073F3D8 /* FoodListViewModel.swift */,
 				4334EE0C2A959CD00073F3D8 /* FoodListView.swift */,
+				4334EE0B2A959CD00073F3D8 /* FoodListViewModel.swift */,
 			);
 			path = FoodList;
 			sourceTree = "<group>";
@@ -186,8 +200,8 @@
 		4334EE0D2A959CD00073F3D8 /* FavoriteTeas */ = {
 			isa = PBXGroup;
 			children = (
-				4334EE0E2A959CD00073F3D8 /* FavoriteTeasViewModel.swift */,
 				4334EE0F2A959CD00073F3D8 /* FavoriteTeasList.swift */,
+				4334EE0E2A959CD00073F3D8 /* FavoriteTeasViewModel.swift */,
 			);
 			path = FavoriteTeas;
 			sourceTree = "<group>";
@@ -196,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				4334EE112A959CD00073F3D8 /* CamelliaView.swift */,
+				434BF06C2AA1231F009E93C2 /* TeaListHeaderView.swift */,
 				4334EE122A959CD00073F3D8 /* OptionsView.swift */,
 				4334EE132A959CD00073F3D8 /* SearchTeaViewModel.swift */,
 			);
@@ -224,8 +239,46 @@
 			isa = PBXGroup;
 			children = (
 				434BF06A2AA0B932009E93C2 /* PremiumView.swift */,
+				435CC3ED2AA2294B00BD0242 /* Steps */,
+				435CC3EB2AA2251700BD0242 /* PremiumViewModel.swift */,
 			);
 			path = Premium;
+			sourceTree = "<group>";
+		};
+		435CC3ED2AA2294B00BD0242 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				435CC3EE2AA2295C00BD0242 /* Step 1 */,
+				435CC3EF2AA2296500BD0242 /* Step 2 */,
+				435CC3F02AA2296A00BD0242 /* Step 3 */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		435CC3EE2AA2295C00BD0242 /* Step 1 */ = {
+			isa = PBXGroup;
+			children = (
+				435CC3E02AA20D6900BD0242 /* MugsVStackView.swift */,
+				435CC3E72AA2161700BD0242 /* PremiumFeaturesView.swift */,
+			);
+			path = "Step 1";
+			sourceTree = "<group>";
+		};
+		435CC3EF2AA2296500BD0242 /* Step 2 */ = {
+			isa = PBXGroup;
+			children = (
+				435CC3DE2AA20D3600BD0242 /* MugsHStackView.swift */,
+				435CC3E22AA20DE400BD0242 /* SubscriptionOptionsView.swift */,
+			);
+			path = "Step 2";
+			sourceTree = "<group>";
+		};
+		435CC3F02AA2296A00BD0242 /* Step 3 */ = {
+			isa = PBXGroup;
+			children = (
+				435CC3E92AA2200800BD0242 /* PremiumUnderConstructionView.swift */,
+			);
+			path = "Step 3";
 			sourceTree = "<group>";
 		};
 		438600032A94DD5F00E942C3 /* Products */ = {
@@ -426,12 +479,16 @@
 				4334EE252A959CD10073F3D8 /* TimerViewModel.swift in Sources */,
 				4334EE312A959CD10073F3D8 /* Tea.swift in Sources */,
 				4334EE292A959CD10073F3D8 /* FavoriteTeasList.swift in Sources */,
+				435CC3EA2AA2200800BD0242 /* PremiumUnderConstructionView.swift in Sources */,
+				435CC3DF2AA20D3600BD0242 /* MugsHStackView.swift in Sources */,
 				4334EE2B2A959CD10073F3D8 /* OptionsView.swift in Sources */,
 				4334EE242A959CD10073F3D8 /* TimerView.swift in Sources */,
 				4334EE2D2A959CD10073F3D8 /* CamelliaTeasApp.swift in Sources */,
 				4334EE2A2A959CD10073F3D8 /* CamelliaView.swift in Sources */,
+				434BF06D2AA1231F009E93C2 /* TeaListHeaderView.swift in Sources */,
 				4334EE232A959CD10073F3D8 /* TeaRowView.swift in Sources */,
 				4334EE282A959CD10073F3D8 /* FavoriteTeasViewModel.swift in Sources */,
+				435CC3E12AA20D6900BD0242 /* MugsVStackView.swift in Sources */,
 				4334EE1C2A959CD00073F3D8 /* TeaListView.swift in Sources */,
 				4334EE1F2A959CD10073F3D8 /* TeaRowImage.swift in Sources */,
 				434BF06B2AA0B932009E93C2 /* PremiumView.swift in Sources */,
@@ -441,9 +498,12 @@
 				4334EE1E2A959CD10073F3D8 /* TeaRowHeader.swift in Sources */,
 				4334EE202A959CD10073F3D8 /* TeaRowContent.swift in Sources */,
 				4334EE222A959CD10073F3D8 /* Line.swift in Sources */,
+				435CC3EC2AA2251700BD0242 /* PremiumViewModel.swift in Sources */,
+				435CC3E32AA20DE400BD0242 /* SubscriptionOptionsView.swift in Sources */,
 				4334EE302A959CD10073F3D8 /* Model.swift in Sources */,
 				4334EE212A959CD10073F3D8 /* TeaRowInfo.swift in Sources */,
 				4334EE262A959CD10073F3D8 /* FoodListViewModel.swift in Sources */,
+				435CC3E82AA2161700BD0242 /* PremiumFeaturesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
